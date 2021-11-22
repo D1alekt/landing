@@ -418,6 +418,12 @@ template {
     display: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    text-decoration: transparent;
+}
+
 
 /**/
 
@@ -428,8 +434,10 @@ template {
     --font-size-h2: 50px;
     --font-size-h3: 20px;
     --font-size-button: 17px;
-    --font-size-base: 16px;
+    --font-size-base: 10px;
     --font-size-menu: 30px;
+    --font-size-document: 16px;
+    --font-size-base-mobile: 6px;
     /*Colours*/
     --blue: #4452fe;
     --blue-800: #1823ac;
@@ -454,7 +462,16 @@ html {
     background-color: var(--page-background-color);
     color: var(--page-text-color);
     line-height: 1.5;
-    box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: var(--font-size-base-mobile);
+    }
+}
+
+body {
+    font-size: var(--font-size-document);
 }
 
 h1 {
@@ -466,6 +483,11 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     line-height: 1.2;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: 1.5;
 }
 
 a {
@@ -490,4 +512,57 @@ a {
 
 .btn--secondary {
     border: 1px solid var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+/*Header*/
+
+.header {
+    padding: 4rem 0;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header__nav ul {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.header__nav li::not(:last-child) {
+    margin-right: 4rem;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.header__actions .btn {
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 769px) {
+    .header__burger {
+        display: none;
+    }
 }
