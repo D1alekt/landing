@@ -630,6 +630,10 @@ a {
         text-align: center;
         padding-bottom: 40px;
     }
+    
+    .tile .tile__image {
+        text-align: center;
+    }
 
     .footer .footer__content {
         flex-direction: column;
