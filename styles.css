@@ -755,6 +755,10 @@ a {
     flex-direction: row;
 }
 
+.gallery__items-rows1 {
+    padding: 0px 20px;
+}
+
 .gallery__item {
     padding: 20px;
 }
@@ -871,9 +875,9 @@ a {
 }
 
 .tile__image {
+    align-items: center;
     padding-top: 40px;
 }
-
 
 /*Footer*/
 
