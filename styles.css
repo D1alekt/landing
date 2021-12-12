@@ -647,7 +647,6 @@ a {
     }
 }
 
-
 /*Hero*/
 
 .hero__actions {
@@ -670,7 +669,6 @@ a {
     width: 100%;
     height: auto;
 }
-
 
 /*Features*/
 
@@ -718,7 +716,6 @@ a {
     justify-content: space-evenly;
 }
 
-
 /*Contents*/
 
 .contents__items {
@@ -751,7 +748,6 @@ a {
 .contents__image {
     margin: 80px 0px;
 }
-
 
 /*Gallery*/
 
